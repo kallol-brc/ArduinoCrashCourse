@@ -1,4 +1,8 @@
-// the setup function runs once when you press reset or power the board
+// Step-1: No variables are used in this sketch
+
+//************************************************************/
+// Step-2: INITIALIZE I/O PARAMETERS
+//************************************************************/
 void setup()
 {
   // initialize digital pins as an output.
@@ -8,6 +12,9 @@ void setup()
 
 }
 
+//************************************************************/
+// Step-3: MAIN PROGRAM
+//************************************************************/
 // the loop function runs over and over again forever
 void loop()
 {
