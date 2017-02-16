@@ -1,8 +1,14 @@
+//************************************************************/
+// Step-1: CONFIGURE VARIABLES
+//************************************************************/
 int smokePin = A5;          // Analog Pin number A5
                             // for connecting the smoke sensor.
 int buzzerPin = 8;          // Digital Pin number 8
                             // for connecting the buzzer.
 
+//************************************************************/
+// Step-2: INITIALIZE I/O PARAMETERS
+//************************************************************/
 void setup()
 {
   pinMode(smokePin, INPUT);   // Configure Analog Pin A5
@@ -27,6 +33,9 @@ void setup()
                              // sending any signals to it.
 }
 
+//************************************************************/
+// Step-3: MAIN PROGRAM
+//************************************************************/
 void loop()
 {
   // Read the input at Arduino Uno’s Analog Pin A5.
