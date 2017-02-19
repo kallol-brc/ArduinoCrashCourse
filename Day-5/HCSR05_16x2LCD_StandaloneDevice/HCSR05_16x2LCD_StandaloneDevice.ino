@@ -1,9 +1,15 @@
+//************************************************************/
+// Step-1: CONFIGURE VARIABLES
+//************************************************************/
 #include <LiquidCrystal.h>
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 
-int trigPin = 13;
-int echoPin = 12;
+int trigPin = 8;
+int echoPin = 7;
 
+//************************************************************/
+// Step-2: INITIALIZE I/O PARAMETERS
+//************************************************************/
 void setup()
 {
   // put your setup code here, to run once:
@@ -15,6 +21,9 @@ void setup()
   lcd.print("Distance:");
 }
 
+//************************************************************/
+// Step-3: MAIN PROGRAM
+//************************************************************/
 void loop()
 {
   long duration, distance;
@@ -28,7 +37,7 @@ void loop()
   // Keep the digital signal HIGH for
   // at least 10 milli-seconds
   // (required by HC-SR04 to activate emission of
-  // ultra sonic waves
+  // ultra-sonic waves
   delayMicroseconds(10);
 
   // After 10 milli-seconds, signal a LOW
