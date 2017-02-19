@@ -57,5 +57,5 @@ void loop()
   lcd.setCursor(0, 1);
   lcd.print(distance);
 
-  delay(500);
+  delay(400);
 }
