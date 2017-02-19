@@ -49,16 +49,13 @@ void loop()
   // Convert the distance to centimeters
   distance = (duration/2) / 29.1;
 
-  if (distance < 10)
-  {
-    Serial.print(distance);
-    Serial.println(" cms");
-    lcd.clear();
-    lcd.setCursor(0, 0);
-    lcd.print("Distance (in cms):");
-    lcd.setCursor(0, 1);
-    lcd.print(distance);
-  }
+  Serial.print(distance);
+  Serial.println(" cms");
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("Distance (in cms):");
+  lcd.setCursor(0, 1);
+  lcd.print(distance);
 
-  delay(1000);
+  delay(500);
 }
