@@ -1,8 +1,8 @@
 //************************************************************/
 // Step-1: CONFIGURE VARIABLES
 //************************************************************/
-int motorPin = 8;       //this is a PWM capable pin
-int buttonPin = 2;
+int motorPin = 3;       //this is a PWM capable pin
+int buttonPin = 8;
 int buttonState = LOW;
 
 //************************************************************/
