@@ -14,7 +14,6 @@ int _gapBetween2Sounds = 1000; // gap between 2 sound events
 //************************************************************/
 void setup ()
 {
-  Serial.begin(9600);
   // configure the pins to be used for I/O
   pinMode (_pinD10, INPUT) ; // input from the sound sensor
   pinMode(_pinD7, OUTPUT); // output to relay
@@ -35,7 +34,6 @@ void loop ()
       {
         _lastSoundEventTime = millis(); // record event time
         _bRelayState = true;
-        Serial.println("Switching ON the relay");
         
         //Switch ON the Relay
         digitalWrite(_pinD7, 0);
@@ -48,7 +46,6 @@ void loop ()
       {
         _lastSoundEventTime = millis(); // record event time          
         _bRelayState = false;
-        Serial.println("Switching OFF the relay");
 
         //Switch OFF the Relay
         digitalWrite(_pinD7, 1);
