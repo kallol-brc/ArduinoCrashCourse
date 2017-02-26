@@ -13,8 +13,7 @@ int buttonState3 = LOW;
 // Step-2: INITIALIZE I/O PARAMETERS
 //************************************************************/
 void setup() 
-{ 
-  Serial.begin(9600);
+{
   pinMode(motorPin, OUTPUT);
   pinMode(buttonPin, INPUT);
   pinMode(buttonPin2, INPUT);
@@ -32,20 +31,14 @@ void loop()
   
   if(buttonState == HIGH)
   {
-    Serial.println("button 1");
-    delay(1000);
     analogWrite(motorPin, 170);   //run at low speed
   }
   else if(buttonState2 == HIGH)
   {
-    Serial.println("button 2");
-    delay(1000);
     analogWrite(motorPin, 240);   //run at high speed
   }
   else if(buttonState3 == HIGH)
   {
-    Serial.println("button 3");
-    delay(1000);
     analogWrite(motorPin, 0);   //stop the motor
   }
 }
